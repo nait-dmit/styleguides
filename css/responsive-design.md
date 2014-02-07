@@ -6,20 +6,27 @@ CSS StyleGuide - Responsive Design
 Mobile-first responsive coding practices are preferred. Media queries should be ordered so that styles are added as device widths increase. This trivial example simply changes the background colour at 4 breakpoints:
 
 ```css
-/* smallest viewports, no media query needed */
+/* tiny viewports, no media query needed */
 html{ background: #f00; }
 
-/* medium viewports */
+/* small viewports */
 @media all and (min-width: 600px) {
   html{ background: #0f0; }
 }
 
+/* medium viewports */
 @media all and (min-width: 960px) {
   html{ background: #00f; }
 }
 
+/* large viewports */
 @media all and (min-width: 1400px) {
-  html{ background: #f0f; }
+  html{ background: #ff0; }
+}
+
+/* huge viewports */
+@media all and (min-width: 2000px) {
+  html{ background: #0ff; }
 }
 ```
 
