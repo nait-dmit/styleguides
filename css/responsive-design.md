@@ -22,3 +22,15 @@ html{ background: #f00; }
   html{ background: #f0f; }
 }
 ```
+
+## Breakpoint Sizes
+
+Breakpoints should be specified in `px` values. The general idea is to aim for spots *between* common device sizes. As a general guideline, deferr to the following breakpoints, unless your example situation dictates otherwise:
+
+|        Device        | Breakpoint |
+| :------------------- | :--------: |
+| iPhone-ish           |    0px     |
+| iPad-ish (portrait)  |   600px    |
+| iPad-ish (landscape) |   960px    |
+| Laptop-ish           |   1400px   |
+| 27" Display-ish      |   2000px   |
