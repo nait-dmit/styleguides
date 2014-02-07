@@ -9,11 +9,11 @@ Welcome to the NAIT DMIT CSS Styleguide.
 ## Coding Style
 
 * Use soft-tabs with a two or four space indent.
-* Put spaces after : in property declarations.
-* Put spaces before { in rule declarations.
-* Use hex color codes #000 unless using rgba.
+* Put spaces after `:` in property declarations.
+* Put spaces before `{` in rule declarations.
+* Use hex color codes `#000` unless using rgba.
 * Use **hyphens** to separate words in class and id names, not underscores, camelCase, or other methods
-* Numerical values which are zero should not be given units
+* Zero values should not be given units when possible
 
 Here is good example syntax:
 ```css
@@ -33,11 +33,11 @@ Websites with single style sheets should have that stylesheet named `style.css`,
 
 ## Pixels vs. Ems
 
-Use percentage value to set font size initially at the document level, use the html tag selector. Font sizes for individual elements should then be set using em units, calculated by the browser as a multiplier of the parent element font size.
+Use percentage value to set font size initially at the document level, use the `html {...}` tag selector. Font sizes for individual elements should then be set using em units, calculated by the browser as a multiplier of the parent element font size.
 
-Set the line-height at the document level by using a unitless value, use the html tag selector. This acts as a multiplier of the computed font size. Line heights for individual text elements can be set either with a unitless value (better for inheritance), or with em values (better for rounding accuracy).
+Set the line-height at the document level by using a unitless value, use the `html {...}` tag selector. This acts as a multiplier of the computed font size. Line heights for individual text elements can be set either with a unitless value (better for inheritance), or with `em` values (better for rounding accuracy).
 
-Other values, such as elements widths, margins, padding, etc can use em or px values.
+Other values, such as elements widths, margins, padding, etc can use `em` or `px` values.
 
 Here is an example:
 
@@ -60,18 +60,18 @@ h1 {
 
 ## Class naming conventions
 
-Never reference js- prefixed class names from CSS files. js- are used exclusively from JS files.
+Never reference `js-` prefixed class names from CSS files. `js-` are used exclusively from JS files.
 
-Use the is- prefix for state rules that are shared between CSS and JS.
+Use the `is-` prefix for state rules that are shared between CSS and JS.
 
 ## Specificity (classes vs. ids)
 
 Heavily favour using classes over ids. Elements that occur exactly once inside a page can use ids, otherwise, use classes. When in doubt, use a class name.
 
-* Good candidates for ids: header, footer, modal popups.
-* Bad candidates for ids: navigation, item listings, item view pages (ex: issue view).
+* Good candidates for ids: modal popups, forms.
+* Bad candidates for ids: navigation, item listings, grid structures.
 
-When styling a component, start with an element + class namespace (prefer class names over ids), prefer descendant selectors by default, and use as little specificity as possible.
+When styling a component, start with an `element.class` namespace (prefer class names over ids), prefer descendant selectors by default, and use as little specificity as possible.
 
 Here is a good example, given the following HTML:
 
@@ -92,7 +92,7 @@ ul.category-list {
   margin: 20px 0 20px 20px;
 }
 
-/* descendant selector for list items, no need to use the li class selector in this case */
+/* descendant selector for list items, no need to use the .item class selector in this case */
 ul.category-list li {
   list-style-type: disc;
 }
@@ -107,5 +107,3 @@ ul.category-list a {
 
 * If you must use an id selector (`#selector`) make sure that you have no more than one in your rule declaration. A rule like `#header .search #quicksearch { ... }` is considered harmful.
 * When modifying an existing element for a specific use, try to use specific class names. Instead of `.listings-layout.bigger` use rules like `.listings-layout.listings-bigger`.
-
-
