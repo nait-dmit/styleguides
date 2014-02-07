@@ -17,27 +17,7 @@ When conducting cross-browser compatability tests use Chrome, Firefox, Internet 
 
 ## Responsive Design
 
-Mobile-first responsive coding practices are preferred. Media queries should be ordered so that styles are added as device widths increase. This trivial example simply changes the background colour at 4 breakpoints:
-
-```css
-/* smallest viewports, no media query needed */
-html{ background: #f00; }
-
-/* medium viewports */
-@media all and (min-width: 600px) {
-  html{ background: #0f0; }
-}
-
-@media all and (min-width: 960px) {
-  html{ background: #00f; }
-}
-
-@media all and (min-width: 1400px) {
-  html{ background: #f0f; }
-}
-```
-
-An easy way to simulate device widths for testing is to dock the developer tools in Chrome to the side and resize left/right to create the desired width restriction. This has the added benefit of having Web Inspector open and ready to use.
+An easy way to simulate device widths for testing is to dock the developer tools in Chrome to the side and resize left/right to create the desired width restriction. This has the added benefit of having Web Inspector open and ready to use. This example simulates the size of an iPhone-like device:
 
 ![Responsive Testing Example](https://raw.github.com/nait-dmit/styleguides/master/assets/images/responsive-testing-example-01.png)
 
