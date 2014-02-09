@@ -22,7 +22,7 @@ The following is an example of an IIFE:
 
 ```js
 // IIFE
-    ;(funciton () {
+;(funciton () {
     var localString = 'foo';
 }());
 
@@ -30,7 +30,7 @@ The following is an example of an IIFE:
 window.localString; // yields undefined
 ```
 
-An anonymous function has been declared and immediately called from the global context.    All functions in JavaScript execute in a local context, which prevents pollution of the global scope (`window` in the browser) by trapping all declarations within the function… unless you do not explicitly declare variables with the reserved word `var`.
+An anonymous function has been declared and immediately called from the global context.    All functions in JavaScript execute in a local context, which prevents pollution of the global context (`window` in the browser) by trapping all declarations within the function… unless you do not explicitly declare variables with the reserved word `var`.
 
 This would hoist the variable into the global context like the following illustrates:
 
@@ -45,9 +45,9 @@ This would hoist the variable into the global context like the following illustr
 window.localString; // yields 'foo'
 ```
 
-For this reason, **it is extremely important to precede any and all variable declarations with `var` to explicitly define the variables intended scope.**
+For this reason, **it is extremely important to precede any and all variable declarations with `var` to explicitly define the variable's intended scope.**
 
-This also helps prevent namespace collisions in the global context as well.  Required global objects are still available within the IIFE and can even be passed as arguments to, which allows you to rename them as parameters within the IIFE.
+Using and IIFE also helps to prevent namespace collisions in the global context.  Required global objects are still available within the IIFE, but they could be passed as arguments as well, which allows you to define them as parameters with whatever names you like.
 
 The following demonstrates how to pass global arguments to an IIFE:
 
@@ -58,4 +58,4 @@ The following demonstrates how to pass global arguments to an IIFE:
 }(this, jQuery));
 ```
 
-In this example, the global object will be passed as `this` along with the `jQuery` function when the function is called and within the function they can be referenced via the `global` and `$` parameters respectively.  This can help alleviate any concern over using the `$` shorthand for jQuery by explicitly passing it by its long name to your IIFE, where you can name it as anything you like.
+In this example, the global object will be passed as `this` along with the `jQuery` function when the IIFE is called. Within the IIFE, the global object and jQuery can be referenced via the `global` and `$` parameters respectively.  This can help alleviate any concern over using the `$` shorthand for jQuery by explicitly passing it by its long name to the IIFE, where you can name it as anything you like.
