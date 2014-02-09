@@ -1,5 +1,5 @@
-Execution Context [Scope]
-=========================
+JS StyleGuide - Execution Context (Scope)
+=========================================
 
 JavaScript statements execute within a default context (or scope) known as the *global* context by default.  All variables and functions defined in this context become distinct properties of the *global object*.
 
