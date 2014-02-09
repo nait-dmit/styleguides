@@ -51,16 +51,16 @@ Indentation should be done with 2 or 4 spaces (prefereaby 4 and avoid tabs whene
 * Commas should be followed by a single space
     * Good: `function fn(a, b, c) {…}`
     * Bad: `function fn(a,b,c) {…}`
-* No spaces should separate unary operators from their target value
+* No spaces should separate unary operators from their target operand
     * Good: `++i`
     * Bad: `++ i`
 * Use blank lines to separate logical groups of statements
 
 ##Control Statements
 
-* All control statements should be precede conditions with a single space
-* All control statements will use braces, regardless of length
 * A single blank line should precede all control statements
+* Conditions should be preceded with a single space
+* All control statements will use braces, regardless of length
 
 ###if-else
 
