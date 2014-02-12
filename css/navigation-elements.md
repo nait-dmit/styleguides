@@ -16,56 +16,62 @@ When creating a horizontal navigation system, and given the following html marku
 
 Consider the following:
 
-### Inline-block Method
+## Inline-block Method
+
+* uses `inline-block` to position button-like anchor tags horizontally
+* better for equally distributed links (equal space between)
+* subject to normal character spaces between elements (see: http://joshnh.com/2012/02/07/why-you-should-use-inline-block-when-positioning-elements/)
 
 ```css
-.primary-nav ul {
+nav.primary-nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.primary-nav li {
+nav.primary-nav li {
   display: inline; /* removes element from the 'document flow', since these are for semantics and not for style */
 }
 
-.primary-nav a {
+nav.primary-nav a {
   display: inline-block;
   padding: 6px 12px; /* the numbers here are not important, just the concept of providing extra clickable space */
   background: #ccc;
 }
 ```
 
-This example uses `inline-block` to position button-like anchor tags horizontally, but is subject to character spacing between elements. (see: http://joshnh.com/2012/02/07/why-you-should-use-inline-block-when-positioning-elements/)
-
-The result (with a few other styles applied)
+### The result
 
 ![Inline-block Nav Example](https://raw.github.com/nait-dmit/styleguides/master/assets/images/inline-block-nav-example-01.png)
 
 
-### Floated Method
+
+## Floated Method
+
+* uses `float` and `width` to position block elements horizontally.
+* better for equally sized links
+* subject to clearfix problem
 
 ```css
-.primary-nav ul {
+nav.primary-nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.primary-nav li {
+nav.primary-nav li {
   display: inline;
 }
 
-.primary-nav a {
+nav.primary-nav a {
   display: block;
   float: left;
   padding: 6px 12px; /* the numbers here are not important, just the concept of providing extra clickable space */
   width: 200px; /* creating equally-sized links */
 }
-
-/* note: when using this floated method, a clearfix may need to be applied to the .primary-nav ul element */
 ```
 
-The result (with a few other styles applied)
+### The result
 
 ![Floated Nav Example](https://raw.github.com/nait-dmit/styleguides/master/assets/images/floated-nav-example-01.png)
+
