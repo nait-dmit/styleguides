@@ -108,9 +108,9 @@ if (condition1) {
 if (condition1) {
 
     if (condition2) {
-	// condition2 statements
+        // condition2 statements
     } else {
-	// false condition2 statements
+        // false condition2 statements
     }
 } else {
     // false condition1 statements
@@ -125,15 +125,15 @@ if (condition1) {
 ```js
 switch (variable) {
     case 1:
-	// case 1 statements
-	break;
+        // case 1 statements
+        break;
     case 2:
-	// case 2 statements
-	break;
+        // case 2 statements
+        break;
     …
     default:
-	// default statements
-	break;
+        // default statements
+        break;
 }
 ```
 ### do-while
