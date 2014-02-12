@@ -44,7 +44,7 @@ Indentation should be done with 2 or 4 spaces (prefereaby 4 and avoid tabs whene
 * Names for variables that should be treated as constants should be CAPITAL_CASE
     * Good: `var TAX_RATE = 0.05;`
     * Bad: `var taxRate = 0.05;`
-    * Avoid the use of `const` for constants, it isn't supported in IE
+	* Avoid the use of `const` for constants, it isn't supported in IE
 
 ## Spacing
 
