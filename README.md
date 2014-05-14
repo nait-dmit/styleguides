@@ -16,3 +16,12 @@ Best practices for the languages we teach.
 | [6. Object Oriented CSS (OOCSS)](https://github.com/nait-dmit/styleguides/tree/master/css/object-oriented-css.md) |                                                                                        |                                                                                      |                                                                                                      |
 | 7. Atomic Design                                                                                                  |                                                                                        |                                                                                      |                                                                                                      |
 |                                                                                                                   |                                                                                        |                                                                                      |                                                                                                      |
+
+
+## Contributing
+
+There are two Sublime Text plugins which may be of benefit when creating and editing the markdown files for this repo:
+* [Markdown Preview](https://github.com/revolunet/sublimetext-markdown-preview)
+* [Table Editor](https://github.com/vkocubinsky/SublimeTableEditor)
+
+If you are new to markdown, the [docs are here](http://daringfireball.net/projects/markdown/syntax)
