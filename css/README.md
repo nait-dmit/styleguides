@@ -103,6 +103,24 @@ ul.category-list a {
 }
 ```
 
+## Selector Lists
+
+When making a list of selectors sharing styles, each selector should occupy its own line:
+```css
+/* Do this */
+h1,
+h2,
+h3,
+h4 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Not this */
+h1, h2, h3, h4 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+```
+
 ### CSS Specificity Guidelines
 
 * If you must use an id selector (`#selector`) make sure that you have no more than one in your rule declaration. A rule like `#header .search #quicksearch { ... }` is considered harmful.
