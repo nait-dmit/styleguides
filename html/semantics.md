@@ -16,12 +16,12 @@ This has been deprecated from the HTML5 spec and should no longer be used.
 
 ## The `<h1> – <h6>` Elements
 
-More research is needed. It seems these tags no longer effect SEO like they used to, and apparently it is appropriate to start your heirarchy over in each sectioning element of the page. (i.e., each new section starts with an `<h1>` tag)
+More research is needed. It seems these tags no longer effect SEO like they used to, and it is appropriate to start your heirarchy over in each sectioning element of the page. (i.e., each new section starts with an `<h1>` tag)
 
 
 ## Presentational Elements Worth Noting
 
-The bold `<b>` and italicize `<i>` tags refer to visual presentation and should be avoided; this should be handled by the CSS instead. However, to have a selection of text look bold and have emphasis use a `strong` and an `em` tag instead where appropriate.
+The bold `<b>` and italicize `<i>` tags refer to visual presentation and should be avoided; this should be handled by the CSS instead. However, to have a selection of text look bold and have emphasis use a `<strong>` and an `<em>` tag instead where appropriate.
 
 
 ## The `<br/>` Tag
