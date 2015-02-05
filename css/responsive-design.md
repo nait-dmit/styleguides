@@ -32,7 +32,7 @@ html{ background: #f00; }
 
 ## Breakpoint Sizes
 
-Breakpoints should be specified in `px` values. The general idea is to aim for spots *between* common device sizes. As a general guideline, deferr to the following breakpoints, unless your example situation dictates otherwise:
+Breakpoints should be specified in `px` values. The general idea is to aim for spots *between* common device sizes. As a general guideline, defer to the following breakpoints, unless your example situation dictates otherwise:
 
 |        Device        | Breakpoint |
 | :------------------- | :--------: |

@@ -12,7 +12,7 @@ Never use Dreamweaver in design mode, or any other WYSIWYG-style editor which wr
 
 Favor using Google Chrome for development. The implementation of the CSS spec varies widely among various rendering engines, but Webkit has wide adoption and is in constant development.
 
-When conducting cross-browser compatability tests use Chrome, Firefox, Internet Explorer (going back 3 versions, so at the time of this writing, IE9, 10, & 11), and Safari (when access to Mac labs is available).
+When conducting cross-browser compatibility tests use Chrome, Firefox, Internet Explorer (going back 3 versions, so at the time of this writing, IE9, 10, & 11), and Safari (when access to Mac labs is available).
 
 
 ## Responsive Design

@@ -58,7 +58,7 @@ Grid Structures:
 
 ## Multiple Class Names
 
-Favour using multiple class names when it's feasable to break redunant code out into a separate class. For example:
+Favour using multiple class names when it's feasible to break redundant code out into a separate class. For example:
 
 ```css
 .button { /* could be applied to <button> or <a> tags */
