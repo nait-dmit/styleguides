@@ -14,7 +14,7 @@ var globalString = 'foo';
 window.globalString; // yields 'foo'
 ```
 
-Creating many variables and functions in the global context has the undesireable effect of polluting the global context with many new (often unimportant) properties.
+Creating many variables and functions in the global context has the undesirable effect of polluting the global context with many new (often unimportant) properties.
 
 For this reason, your code should never be executed in the global context directly.  The current solution is to use an Immediately-Invoked-Function-Expression ([IIFE](http://benalman.com/news/2010/11/immediately-invoked-function-expression/ "IFFE")) to enclose statements within a local context environment.
 
